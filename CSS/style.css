@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 2px solid white;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-family: "Rye", serif;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    color: black;
+    background-color: white;
+}
+
+.Hero-section {
+    margin-top: 10vh;
+    padding: 20px;
+    font-family: "Lexend Exa", sans-serif;
+
+}
+
+.Hero-section section {
+    display: block;
+}
+
+.dev-img img {
+    height: 60vh;
+}
+
+.about-dev p {
+    width: 60vw;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+@media (max-width:768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .Navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Hero-section {
+        margin-top: 5vh;
+    }
+
+    .Hero-section section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .dev-img img {
+        height: 40vh;
+        max-width: 90vw;
+        border-radius: 80px;
+        border: 2px solid blanchedalmond;
+        padding: 10px;
+    }
+
+    .about-dev p {
+        width: 90vw;
+        font-size: 1rem;
+    }
+}
