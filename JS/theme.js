@@ -18,7 +18,7 @@ if (currentTheme === 'light') {
 themeToggleBtn.addEventListener('click', () => {
     // Toggle the .light-theme CSS class on the body element
     body.classList.toggle('light-theme');
-    
+
     // Update local storage and the button text so the preference is remembered
     if (body.classList.contains('light-theme')) {
         localStorage.setItem('theme', 'light');
