@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
+<!-- HEADER SECTION: Contains the sticky navigation bar, logo, and theme toggle button -->
 <header>
     <div class="Navbar">
         <div class="logo">
@@ -21,24 +22,35 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
+                    <li><a href="#">Tech Stack</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">About me</a></li>
                     <li><a href="#">Contact me</a></li>
                 </ul>
             </nav>
         </div>
+        
+        <div class="theme-toggle-container">
+            <button id="theme-toggle" class="theme-text-btn">Dark</button>
+        </div>
     </div>
 </header>
 
 <body>
+    <!-- HERO SECTION: The main introductory area with my photo and a call-to-action button -->
     <div class="Hero-section">
         <section>
 
             <div class="about-dev">
+                <h1>Hi, I'm Varun.</h1>
+                <h2 class="hero-subtitle">Software Developer</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ullam qui quas necessitatibus
                     accusantium voluptas vero cum fugiat odio dolores, quae tenetur dicta reiciendis facere earum.
                     Temporibus doloribus nesciunt atque repellat?
                 </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                </div>
             </div>
 
             <div class="dev-img">
@@ -48,6 +60,7 @@
         </section>
     </div>
 
+    <!-- SKILL SECTION: A responsive grid layout displaying the technologies I use -->
     <div class="Skill-section">
         <section>
 
@@ -165,7 +178,47 @@
 
     </div>
 
+    <!-- PROJECT SECTION: Vertically stacked cards detailing my previous work -->
+    <div class="project-section">
+        <section>
 
+            <div class="project-section-heading">
+                <h1>Projects</h1>
+            </div>
+
+            <div class="project-name">
+                <h2>MERC - Youtube API Online Player</h2>
+            </div>
+
+            <div class="project-info-container">
+
+                <div class="project-card">
+                    <div class="project-item">
+                        <div class="merc-project-img">
+                            <img src="img/Merc 1.png" alt="Project screenshot 1">
+                        </div>
+                        <div class="project-desc">
+                            <p>Description for the first image goes here. Explain its features and technology.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="merc-project-img">
+                            <img src="img/Merc 2.png" alt="Project screenshot 2">
+                        </div>
+                        <div class="project-desc">
+                            <p>Description for the second image goes here. Elaborate on the UI and design.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <script src="JS/theme.js"></script>
 </body>
 
 </html>
