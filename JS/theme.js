@@ -28,3 +28,25 @@ themeToggleBtn.addEventListener('click', () => {
         themeToggleBtn.textContent = 'Dark';
     }
 });
+
+// =========================================
+// SCROLL TO TOP BUTTON LOGIC
+// =========================================
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+// Show the button when scrolling down 300px from the top
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add('show');
+    } else {
+        scrollToTopBtn.classList.remove('show');
+    }
+});
+
+// Scroll smoothly to the top when clicked
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

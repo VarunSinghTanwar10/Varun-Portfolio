@@ -18,6 +18,11 @@ body {
    NAVIGATION BAR
    Sticky header with a glassmorphism blur effect
    ========================================= */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 .Navbar {
     display: flex;
     justify-content: space-between;
@@ -26,9 +31,6 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(11, 11, 13, 0.85);
     backdrop-filter: blur(12px);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 .logo a {
@@ -49,15 +51,18 @@ body {
     color: white;
     border: solid 2px white;
     border-radius: 20px;
-    padding: 8px 8px;
+    padding: 8px 16px;
     transition: all 0.3s ease-in-out;
     font-size: 1.2rem;
     font-family: "Lexend Exa", sans-serif;
+    display: inline-block;
 }
 
 .nav-links a:hover {
     color: black;
     background-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
 /* =========================================
@@ -144,25 +149,27 @@ body {
     background: white;
     color: black;
     font-weight: bold;
+    border: 2px solid white;
+    transition: all 0.3s ease;
 }
 
 .primary-btn:hover {
-    background: #ddd;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
+
 .section-heading {
     display: flex;
     justify-content: center;
-    padding-top: 18vh;
+    padding-top: 10vh;
 }
 
 .section-heading h1 {
     font-size: 5rem;
     font-family: "Lexend Exa", sans-serif;
     border-bottom: 3px solid white;
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
 }
 
 /* =========================================
@@ -173,7 +180,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
-    margin-top: 5vh;
     padding: 20px 5vw;
 }
 
@@ -269,7 +275,7 @@ body {
 .project-section-heading {
     display: flex;
     justify-content: center;
-    padding-top: 18vh;
+    padding-top: 10vh;
     margin-bottom: 5vh;
 }
 
@@ -396,7 +402,9 @@ body {
 
 .theme-text-btn:hover {
     background: white;
-    color: #0b0b0d;
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
 /* =========================================
@@ -454,12 +462,21 @@ body.light-theme .about-dev p {
 body.light-theme .primary-btn {
     background: #1a1a1a;
     color: #f4f4f6;
+    border: 2px solid #1a1a1a;
 }
 
 body.light-theme .primary-btn:hover {
-    background: #333;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+body.light-theme .nav-links a:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body.light-theme .theme-text-btn:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 
 body.light-theme .section-heading h1,
 body.light-theme .project-section-heading h1 {
@@ -489,4 +506,252 @@ body.light-theme .project-img img {
 
 body.light-theme .project-info p {
     color: #444;
+}
+
+/* =========================================
+   ABOUT ME SECTION
+   ========================================= */
+.about-section {
+    padding-bottom: 10vh;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+    font-family: "Lexend Exa", sans-serif;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.about-card:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+.about-card p {
+    margin-bottom: 20px;
+}
+
+.about-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   CONTACT SECTION
+   ========================================= */
+.contact-section {
+    padding-bottom: 15vh;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 50px;
+    width: 100%;
+    max-width: 600px;
+    font-family: "Lexend Exa", sans-serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group label {
+    font-size: 1.1rem;
+    color: #f3f3f3;
+}
+
+.input-group input,
+.input-group textarea {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: white;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-form .primary-btn {
+    align-self: center;
+    cursor: pointer;
+    padding: 14px 35px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-family: inherit;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(11, 11, 13, 0.85);
+    padding: 40px 5vw;
+    font-family: "Lexend Exa", sans-serif;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-content p {
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+/* =========================================
+   LIGHT THEME OVERRIDES FOR NEW SECTIONS
+   ========================================= */
+body.light-theme .about-card,
+body.light-theme .contact-card {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .about-card:hover,
+body.light-theme .contact-card:hover {
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+body.light-theme .about-card p {
+    color: #444;
+}
+
+body.light-theme .input-group label {
+    color: #1a1a1a;
+}
+
+body.light-theme .input-group input,
+body.light-theme .input-group textarea {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: rgba(0, 0, 0, 0.2);
+    color: #1a1a1a;
+}
+
+body.light-theme .input-group input:focus,
+body.light-theme .input-group textarea:focus {
+    border-color: #1a1a1a;
+    background: white;
+}
+
+body.light-theme .footer {
+    background: #f4f4f6;
+    border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .footer-content h2 {
+    color: #1a1a1a;
+}
+
+body.light-theme .social-links a {
+    color: #555;
+}
+
+body.light-theme .social-links a:hover {
+    color: #1a1a1a;
+}
+
+/* =========================================
+   SCROLL TO TOP BUTTON
+   ========================================= */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+body.light-theme .scroll-to-top {
+    background: #1a1a1a;
+    color: white;
+    border-color: #1a1a1a;
+}
+
+body.light-theme .scroll-to-top:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
