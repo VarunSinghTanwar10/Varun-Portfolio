@@ -14,8 +14,12 @@
 <!-- HEADER SECTION: Contains the sticky navigation bar, logo, and theme toggle button -->
 <header>
     <div class="Navbar">
+        <div class="hamburger">
+            <button type="button" id="hamburger-btn">☰</button>
+        </div>
+
         <div class="logo">
-            <a href="#">Varun.</a>
+            <a href="#">Varun</a>
         </div>
 
         <div class="nav-links">
@@ -29,7 +33,7 @@
                 </ul>
             </nav>
         </div>
-        
+
         <div class="theme-toggle-container">
             <button id="theme-toggle" class="theme-text-btn">Dark</button>
         </div>
@@ -161,7 +165,7 @@
                 </div>
 
                 <div class="skill-card nodejs">
-                    <img src="img/NodeJS.svg" alt="NodeJS">
+                    <img src="img/nodejs.svg" alt="NodeJS" onerror="this.src='img/NodeJS.svg'">
 
                     <div class="skill-head">
                         <h2>NodeJS</h2>
@@ -203,7 +207,7 @@
 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="" alt="Second Project">
+                        <img src="img/Merc 2.png" alt="Second Project">
                     </div>
                     <div class="project-info">
                         <h2>Second Project</h2>
@@ -229,10 +233,13 @@
             <div class="about-content">
                 <div class="about-card">
                     <p>
-                        I'm a passionate software developer with a strong focus on creating beautiful, responsive, and user-friendly web applications. With expertise in modern web technologies, I love turning complex problems into simple, elegant solutions.
+                        I'm a passionate software developer with a strong focus on creating beautiful, responsive, and
+                        user-friendly web applications. With expertise in modern web technologies, I love turning
+                        complex problems into simple, elegant solutions.
                     </p>
                     <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good book. I'm always eager to learn and take on new challenges.
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source
+                        projects, or enjoying a good book. I'm always eager to learn and take on new challenges.
                     </p>
                 </div>
             </div>
@@ -243,7 +250,7 @@
     <div class="contact-section" id="contact">
         <section>
             <div class="section-heading">
-                <h1>Contact me</h1>
+                <h1>Contact Me</h1>
             </div>
             <div class="contact-container">
                 <div class="contact-card">
@@ -283,7 +290,7 @@
     <!-- SCROLL TO TOP BUTTON -->
     <button id="scrollToTopBtn" class="scroll-to-top" title="Go to top">↑</button>
 
-    <script src="JS/theme.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>

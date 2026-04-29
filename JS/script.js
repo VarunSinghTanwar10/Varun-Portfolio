@@ -8,10 +8,10 @@ const currentTheme = localStorage.getItem('theme');
 // If light mode was selected in the past, apply it immediately on page load
 if (currentTheme === 'light') {
     body.classList.add('light-theme');
-    themeToggleBtn.textContent = 'Light';
-} else {
-    // Otherwise, default the button text to show Dark
     themeToggleBtn.textContent = 'Dark';
+} else {
+    // Default is dark mode
+    themeToggleBtn.textContent = 'Light';
 }
 
 // Add a click listener to handle the actual theme switching
@@ -22,10 +22,10 @@ themeToggleBtn.addEventListener('click', () => {
     // Update local storage and the button text so the preference is remembered
     if (body.classList.contains('light-theme')) {
         localStorage.setItem('theme', 'light');
-        themeToggleBtn.textContent = 'Light';
+        themeToggleBtn.textContent = 'Dark';
     } else {
         localStorage.setItem('theme', 'dark');
-        themeToggleBtn.textContent = 'Dark';
+        themeToggleBtn.textContent = 'Light';
     }
 });
 
@@ -49,4 +49,11 @@ scrollToTopBtn.addEventListener('click', () => {
         top: 0,
         behavior: 'smooth'
     });
+});
+
+const btn = document.getElementById("hamburger-btn");
+const menu = document.getElementById("menu");
+
+btn.addEventListener("click", () => {
+    menu.classList.toggle("active");
 });
