@@ -1,0 +1,68 @@
+/* =========================================
+   NAVIGATION BAR
+   Sticky header with a glassmorphism blur effect
+   ========================================= */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(11, 11, 13, 0.85);
+    backdrop-filter: blur(12px);
+    flex-wrap: wrap;
+}
+
+.hamburger button {
+    cursor: pointer;
+    background-color: transparent;
+    background: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 5px 30px;
+    transition: all 0.3s ease;
+}
+
+.hamburger button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.25);
+}
+
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-family: "Lexend Exa", sans-serif;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+    font-family: "Lexend Exa", sans-serif;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}

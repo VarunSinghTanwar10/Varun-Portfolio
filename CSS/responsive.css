@@ -1,0 +1,157 @@
+/* =========================================
+   RESPONSIVE DESIGN (ALL DEVICES)
+   Mobile First Approach
+   ========================================= */
+
+/* Tablets */
+@media (max-width: 1200px) {
+
+    .Navbar {
+        padding: 20px 4vw;
+    }
+
+    .nav-links ul {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .logo a {
+        font-size: 2rem;
+    }
+
+    .Hero-section section {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .dev-img img {
+        width: 50vw;
+    }
+
+    .about-dev h1 {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .section-heading h1,
+    .project-section-heading h1 {
+        font-size: 3rem;
+    }
+
+    .skill-head {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+    .Navbar {
+        flex-direction: row;
+        padding: 15px 4vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .Hero-section {
+        padding: 20px 4vw;
+    }
+
+    .dev-img img {
+        width: 70vw;
+        min-width: unset;
+    }
+
+    .about-dev h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .about-dev {
+        font-size: 1rem;
+    }
+
+    .skill-container {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .skill-card {
+        flex: 0 0 auto;
+        width: 240px;
+    }
+
+    .skill-head {
+        font-size: 1.3rem;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card,
+    .contact-card {
+        padding: 30px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+    .logo a {
+        font-size: 1.6rem;
+    }
+
+    .Hero-section {
+        margin-top: 2vh;
+    }
+
+    .about-dev h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-btns .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .section-heading h1,
+    .project-section-heading h1 {
+        font-size: 2rem;
+    }
+
+    .footer-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .skill-head {
+        font-size: 1.3rem;
+    }
+}

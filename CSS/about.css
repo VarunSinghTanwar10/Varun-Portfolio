@@ -1,0 +1,42 @@
+/* =========================================
+   ABOUT ME SECTION
+   ========================================= */
+.about-section {
+    padding-bottom: 10vh;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 800px;
+    text-align: right;
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+    font-family: "Lexend Exa", sans-serif;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.about-card:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+.about-card p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-card p:last-child {
+    margin-bottom: 0;
+}

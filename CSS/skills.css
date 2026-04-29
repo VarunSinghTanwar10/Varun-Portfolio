@@ -1,0 +1,98 @@
+/* =========================================
+   SKILLS SECTION
+   Responsive grid showing skill cards
+   ========================================= */
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    padding: 20px 5vw;
+    align-items: stretch;
+}
+
+.skill-card {
+    border-radius: 30px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card img {
+    width: auto;
+    height: 90px;
+    padding: 10px;
+}
+
+.skill-head {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "Lexend Exa", sans-serif;
+    margin-bottom: 3vh;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.4;
+    font-family: "Lexend Exa", sans-serif;
+}
+
+.html {
+    background-color: rgba(224, 109, 60, 0.75);
+}
+
+.css {
+    background-color: rgba(48, 76, 220, 0.75);
+}
+
+.react {
+    background-color: rgba(113, 191, 219, 0.75);
+}
+
+.javascript {
+    background-color: rgba(243, 224, 80, 0.75);
+}
+
+.php {
+    background-color: rgba(128, 144, 199, 0.75);
+}
+
+.cpp {
+    background-color: rgba(26, 67, 126, 0.75);
+}
+
+.nodejs {
+    background-color: rgba(119, 161, 101, 0.75);
+}
+
+.python {
+    background: linear-gradient(495deg,
+            rgba(55, 119, 171, 0.2),
+            rgba(255, 212, 59, 0.2));
+}
+
+.react img {
+    animation: Reactlogo 8s linear infinite;
+}
+
+@keyframes Reactlogo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

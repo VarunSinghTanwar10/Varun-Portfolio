@@ -1,0 +1,107 @@
+/* =========================================
+   HERO SECTION
+   My intro 
+   ========================================= */
+.Hero-section {
+    margin-top: 5vh;
+    padding: 20px 5vw;
+    font-family: "Lexend Exa", sans-serif;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+.Hero-section section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.dev-img img {
+    height: auto;
+    width: 25vw;
+    min-width: 280px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.about-dev {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.about-dev h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #fff, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    color: #aaa;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.about-dev p {
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.hero-btns .btn {
+    text-decoration: none;
+    padding: 14px 35px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.primary-btn {
+    background: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.section-heading h1 {
+    font-size: 5rem;
+    font-family: "Lexend Exa", sans-serif;
+    border-bottom: 3px solid white;
+    margin-bottom: 5vh;
+}

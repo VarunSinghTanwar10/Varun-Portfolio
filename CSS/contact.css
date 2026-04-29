@@ -1,0 +1,68 @@
+/* =========================================
+   CONTACT SECTION
+   ========================================= */
+.contact-section {
+    padding-bottom: 15vh;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 50px;
+    width: 100%;
+    max-width: 600px;
+    font-family: "Lexend Exa", sans-serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group label {
+    font-size: 1.1rem;
+    color: #f3f3f3;
+}
+
+.input-group input,
+.input-group textarea {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: white;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-form .primary-btn {
+    align-self: center;
+    cursor: pointer;
+    padding: 14px 35px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-family: inherit;
+}
